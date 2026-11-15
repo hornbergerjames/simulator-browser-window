@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pineapple Pizza Palace: bold flavors and great food, with a little personality.">
+    <title>Pineapple Pizza Palace | Menu & Orders</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/menu.js" defer></script>
+    <script src="js/order.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#home" aria-label="Pineapple Pizza Palace, home">
+                <span class="brand-mark" aria-hidden="true">🍍</span>
+                <span>PINEAPPLE <span class="brand-red">PIZZA</span> PALACE</span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#menu-section">Menu</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a class="header-order" href="#order-section">🛒 <span>Order</span> <span id="header-count" class="count-bubble">0</span></a>
+        </div>
+    </header>
+
+    <main id="main">
+       
+       
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="container hero-inner">
+                <p class="eyebrow hero-eyebrow">GOOD FOOD. BOLDER OPINIONS.</p>
+                <h1 id="hero-title">Great Food.<br><span>Bolder Opinions.</span></h1>
+                <p>Burgers, pizza, and more. Yes, pineapple goes on pizza.</p>
+                <a class="button button-primary hero-button" href="#menu-section">Explore the Menu <span aria-hidden="true">↓</span></a>
+            </div>
+        </section>
+
+
+
+
+        <section id="menu-section" class="menu-section" aria-labelledby="menu-heading">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">FRESHLY MADE, RIDICULOUSLY GOOD</p>
+                    <h2 id="menu-heading">Our <span>Menu</span></h2>
+                    <p>Classic favorites, questionable pineapple opinions, and something for everyone.</p>
+                </div>
+
+
+                <div class="menu-layout">
+                    <div class="menu-content">
+                        <!-- Category buttons are visual only until you write the filtering JavaScript. -->
+                        <div class="category-filters" role="group" aria-label="Filter menu by category">
+                            <button type="button" class="filter-button active" data-category="all" aria-pressed="true">All</button>
+                            <button type="button" class="filter-button" data-category="Burgers" aria-pressed="false">Burgers</button>
+                            <button type="button" class="filter-button" data-category="Pizza" aria-pressed="false">Pizza</button>
+                            <button type="button" class="filter-button" data-category="Sides" aria-pressed="false">Sides</button>
+                            <button type="button" class="filter-button" data-category="Drinks" aria-pressed="false">Drinks</button>
+                            <button type="button" class="filter-button" data-category="Other" aria-pressed="false">Other</button>
+                        </div>
+
+                        
+                       
+                <div id="menu-grid" class="menu-grid">
+
+                    <!-- ITEM 0: CHEESEBURGER -->
+                    <article id="item-0" class="menu-card">
+
+             <nav class="main-nav" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#menu-section">Menu</a>
+            </nav>
+
+                        <img src="images/burger.jpg"
+                            alt="Cheeseburger with lettuce, tomato and cheese"
+                            loading="lazy">
+
+                        <div class="menu-card-body">
+
+                            <span class="category-label">Burgers</span>
+
+                            <h3>Classic Cheeseburger</h3>
+
+                            <p class="menu-description">
+                                Juicy beef, melted cheese, and all the classics.
+                            </p>
+
+                            <div class="card-bottom">
+                                <strong class="item-price">$9.99</strong>
+
+                               
+                               <div class="order-controls">
+                                    <span class="quantity">0</span>
+                                <button class="button button-small"
+                                        type="button"
+                                        data-index="0">
+                                    + Add to Order
+                                </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- ITEM 1: PINEAPPLE PIZZA -->
+                    <article id="item-1" class="menu-card">
+
+             <nav class="main-nav" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#menu-section">Menu</a>
+            </nav>
+
+                        <img src="images/pizza.jpg"
+                            alt="Freshly baked pizza with pineapple and pepperoni"
+                            loading="lazy">
+
+                        <div class="menu-card-body">
+
+                            <span class="category-label">Pizza</span>
+
+                            <h3>Pineapple Pizza</h3>
+
+                            <p class="menu-description">
+                                Sweet pineapple, melted cheese, and no apologies.
+                            </p>
+
+                            <div class="card-bottom">
+                                <strong class="item-price">$12.99</strong>
+
+
+                                <div class="order-controls">
+                                    <span class="quantity">0</span>
+
+                                    <button class="button button-small"
+                                            type="button"
+                                            data-index="1">
+                                        + Add to Order
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- ITEM 2: FRENCH FRIES -->
+                    <article id="item-2" class="menu-card">
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#menu-section">Menu</a>
+            </nav>
+
+
+                        <img src="images/fries.jpg"
+                            alt="Golden french fries in a rustic bowl"
+                            loading="lazy">
+
+                        <div class="menu-card-body">
+
+                            <span class="category-label">Sides</span>
+
+                            <h3>Golden Fries</h3>
+
+                            <p class="menu-description">
+                                Crispy, salty, golden, and hard to share.
+                            </p>
+
+
+                            
+                            <div class="card-bottom">
+                                <strong class="item-price">$4.99</strong>
+
+
+                                 <div class="order-controls">
+                                    <span class="quantity">0</span>
+                                <button class="button button-small"
+                                        type="button"
+                                        data-index="2">
+                                    + Add to Order
+                                </button>
+                                 </div>
+
+
+                            </div>
+
+
+                
+
+                        </div>
+                    </article>
+
+
+                    <!-- ITEM 3: PINEAPPLE -->
+                    <article id="item-3" class="menu-card">
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#menu-section">Menu</a>
+            </nav>
+
+                        <img src="images/pineapple.jpg"
+                            alt="Fresh pineapple with a sliced wedge"
+                            loading="lazy">
+
+                        <div class="menu-card-body">
+
+                            <span class="category-label">Other</span>
+
+                            <h3>Fresh Pineapple</h3>
+
+                            <p class="menu-description">
+                                A tropical snack for pineapple enthusiasts.
+                            </p>
+
+                            <div class="card-bottom">
+                                <strong class="item-price">$2.00</strong>
+
+
+                                 <div class="order-controls">
+                                    <span class="quantity">0</span>
+                                <button class="button button-small"
+                                        type="button"
+                                        data-index="3">
+                                    + Add to Order
+                                </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- ITEM 4: GARDEN SALAD -->
+                    <article id="item-4" class="menu-card">
+
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#menu-section">Menu</a>
+            </nav>
+                        <img src="images/salad.jpg"
+                            alt="Garden salad with leafy greens and cherry tomatoes"
+                            loading="lazy">
+
+                        <div class="menu-card-body">
+
+                            <span class="category-label">Sides</span>
+
+                            <h3>Garden Salad</h3>
+
+                            <p class="menu-description">
+                                Fresh greens, tomatoes, cucumbers, and crunch.
+                            </p>
+
+
+                        
+                            <div class="card-bottom">
+
+                                <strong class="item-price">$6.99</strong>
+
+
+                                 <div class="order-controls">
+                                    <span class="quantity">0</span>
+                                <button class="button button-small"
+                                        type="button"
+                                        data-index="4">
+                                    + Add to Order
+                                </button>
+                                
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- ITEM 5: SODA -->
+                    <article id="item-5" class="menu-card">
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#menu-section">Menu</a>
+            </nav>
+
+                        <img src="images/soda.jpg"
+                            alt="Glass of cola with ice cubes"
+                            loading="lazy">
+
+                        <div class="menu-card-body">
+
+                            <span class="category-label">Drinks</span>
+
+                            <h3>Ice-Cold Soda</h3>
+
+                            <p class="menu-description">
+                                Cold, bubbly, refreshing, and full of fizz.
+                            </p>
+
+                            <div class="card-bottom">
+                                <strong class="item-price">$1.99</strong>
+
+
+                                 <div class="order-controls">
+                                    <span class="quantity">0</span>
+                                <button class="button button-small"
+                                        type="button"
+                                        data-index="5">
+                                    + Add to Order
+                                </button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                                </article>
+
+        </div> <!-- END menu-grid -->
+
+    </div> <!-- END menu-content -->
+
+    <aside id="order-section" class="order-card"
+           aria-labelledby="order-heading">
+
+    <!-- ORDER HEADER -->
+    <div class="order-heading">
+
+        <h2 id="order-heading">🛒 Your Order</h2>
+
+        <span id="cart-count" class="count-bubble">0</span>
+
+    </div>
+
+
+    <!-- ORDER ITEMS -->
+    <!-- JavaScript will display ordered products here -->
+    <div id="order-items" class="order-items" aria-live="polite">
+
+        <div id="empty-order" class="empty-order">
+
+            <span aria-hidden="true">🛍️</span>
+
+            <h3>Your order is empty</h3>
+
+            <p>Add something delicious to get started!</p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ORDER FOOTER -->
+    <div class="order-footer">
+
+        <div class="total-line">
+
+            <span>Total</span>
+
+            <strong id="order-total">$0.00</strong>
+
+        </div>
+
+        <button id="checkout-button"
+                class="button button-primary button-full"
+                type="button"
+                disabled>
+            Checkout
+        </button>
+
+        <button id="clear-order-button"
+                class="button button-outline button-full"
+                type="button">
+            Clear Order
+        </button>
+
+        <p class="order-note">
+            Demo project only. No real purchases or payments.
+        </p>
+
+    </div>
+
+</aside>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="special-section" aria-labelledby="special-heading">
+            <div class="container special-inner">
+                <img id="special-image" src="images/pizza.jpg" alt="Pizza with pineapple and pepperoni" loading="lazy">
+                <div class="special-copy">
+                    <p class="eyebrow">CHEF'S PICK</p>
+                    <h2 id="special-heading">Today's <span>Special</span></h2>
+                    <h3 id="special-name">Pineapple Pizza</h3>
+                    <p id="special-description">Our most controversial masterpiece. Try it and join the debate.</p>
+                    <div class="special-price" id="special-price">$12.99</div>
+                    <!-- Challenge extension: connect this button to a special object. -->
+                    <button id="special-add" class="button button-primary" type="button">+ Add Special to Order</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="info-section" aria-labelledby="about-heading">
+            <div class="container info-layout">
+                <div><p class="eyebrow">OUR STORY</p><h2 id="about-heading">Food with <span>Personality.</span></h2></div>
+                <div><p>We believe a great meal should be memorable, delicious, and just a little ridiculous. From juicy burgers to pizzas that spark passionate debates, there's something here for everybody.</p><p>Fresh ingredients. Bold flavor. Absolutely no pineapple judgment.</p></div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+        <div class="container footer-inner">
+            <div><div class="footer-brand">🍍 PINEAPPLE <span>PIZZA</span> PALACE</div><p>Good food. Bolder opinions.</p></div>
+            <nav aria-label="Footer navigation"><a href="#home">Home</a><a href="#menu-section">Menu</a><a href="#about">About</
+            <p class="footer-small">Fictional restaurant for a JavaScript class project.</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        document.querySelectorAll(".menu-card").forEach(card => {
+
+        let quantity = 0;
+
+        const button = card.querySelector(".button-small");
+        const counter = card.querySelector(".quantity");
+
+        if (!button || !counter) return;
+
+        button.addEventListener("click", () => {
+            let quantity = Number(counter.textContent);
+            quantity++;
+            counter.textContent = quantity;
+        });
+
+    });
+
+    function resetQuantities() {
+    document.querySelectorAll(".quantity").forEach(counter => {
+        counter.textContent = "0";
+    });
+}
+
+
+    </script>
+
+</body>
+</html>
