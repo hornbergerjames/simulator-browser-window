@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1">
+<title>Student Website Preview</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #e8edf2;
+        text-align: center;
+    }
+
+    .toolbar {
+        background: #203b5a;
+        padding: 15px;
+        color: white;
+    }
+
+    button {
+        padding: 10px 20px;
+        margin: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .preview {
+        margin: 20px auto;
+        width: 100%;
+        max-width: 100%;
+        height: 80vh;
+        background: white;
+        transition: width 0.3s;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: 2px solid #555;
+        box-sizing: border-box;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- WebsitePreview/
+│
+├── index.html          ← New preview page with buttons
+│
+└── student/
+    ├── index.html      ← Student's original homepage
+    ├── style.css
+    ├── script.js
+    └── images/ -->   
+
+
+
+
+
+
+
+<div class="toolbar">
+    <h2>Student Website Demonstration</h2>
+
+    <button onclick="resizePreview('100%')">
+        Desktop
+    </button>
+
+    <button onclick="resizePreview('860px')">
+        Tablet
+    </button>
+
+    <button onclick="resizePreview('605px')">
+        Mobile Phone
+    </button>
+
+
+   <button onclick="resizePreview('375px')">
+        Small Mobile Phone
+    </button>
+
+
+</div>
+
+<div class="preview" id="preview">
+    <iframe
+        src="student/index.html"
+        title="Student Website">
+    </iframe>
+</div>
+
+<script>
+function resizePreview(width) {
+    document.getElementById("preview")
+        .style.width = width;
+}
+</script>
+
+</body>
+</html>
